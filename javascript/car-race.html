@@ -8,21 +8,25 @@
   </head>
 
   <body id="race">
+
+    <div id="container">
     
-    <h1>jQuery Car Race</h1>
+      <h1>jQuery Car Race</h1>
 
-    <input type="button" value="Race" id="go">
-    <input type="button" value="Reset" id="reset">
+      <input type="button" value="Race" id="go">
+      <input type="button" value="Reset" id="reset">
 
-    <div id="race-track">
-      <img src="images/race-car.png" id="car1" alt="car1">
-      <img src="images/race-car2.png" id="car2" alt="car2">
-    </div>
+      <div id="race-track">
+        <img src="images/race-car.png" id="car1" class="car" alt="car1">
+        <hr>
+        <img src="images/race-car2.png" id="car2" class="car" alt="car2">
+      </div>
 
-    <div id="race-info">
-      <h2>Results</h2>
-      <div id="race-info1">Car 1 <span></span></div>
-      <div id="race-info2">Car 2 <span></span></div>
+      <div id="race-info" class="clearfix">
+        <h2>Results</h2>
+        <div id="race-info1" class="race-result">Car 1 <span></span></div>
+        <div id="race-info2" class="race-result">Car 2 <span></span></div>
+      </div>
     </div>
 
     <!-- Load the CDN first-->
