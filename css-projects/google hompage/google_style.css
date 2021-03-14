@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-style: normal;
+  font-family: Helvetica;
+}
+#menu-bar {
+  padding: 10px;
+  background: white;
+  float: right;
+}
+#menu-bar input[type="submit"] {
+  background: white;
+  border: none;
+  padding: 10px;
+  font-size: 10px;
+}
+#menu-bar input[type="submit"]:hover {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+#menu-bar button {
+  background: blue;
+  border: solid 1px #aaa;
+  color: white;
+  font-size: 12px;
+  padding: 3px;
+}
+#menu-bar button:hover {
+  border-color: #ccc;
+}
+
+.container {
+  clear: right;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+input[type="search"] {
+  width: 390px;
+  padding: 0 5px 0;
+  margin: 0 0 5px;
+  font-size: 16px;
+}
+input[type="search"]:hover {
+  border-color: #aaa;
+}
+.container #logo em {
+  font-size: 60px;
+  color: blue;
+  letter-spacing: -6px;
+  font-family: cursive;
+}
+.container #country em {
+  font-size: 10px;
+  float: right;
+  padding: 0 120px 0 0;
+}
+fieldset {
+  clear: right;
+  padding: 10px 10px 20px;
+  border: none;
+}
+.container form fieldset button {
+  font-size: 10px;
+  border: solid 1px #ccc;
+  padding: 5px;
+  margin: 2px 10px 10px 0;
+}
+.container form fieldset button:hover {
+  border-color: #aaa;
+  background: #ccc;
+  cursor: pointer;
+}
+p {
+  font-size: 10px;
+}
+p a {
+  text-decoration: none;
+  font-size: 10px;
+}
+p a:hover {
+  cursor: pointer;
+  color: blue;
+}
+footer {
+  background: #eee;
+  position: fixed;
+  bottom: 0;
+  width: 100%
+}
+footer input[type="submit"] {
+  border: none;
+  background: #eee;
+  padding: 5px;
+  font-size: 8px;
+}
+footer input[type="submit"]:hover {
+  cursor: pointer;
+  color: blue;
+}
+footer .foot1 {
+  width: 25%;
+  float: left;
+  margin: 0 0 0 20px;
+}
+footer .foot2 {
+  width: 25%;
+  float: right;
+  padding: 0 0 0 0;
+}
+.clearFix:after {
+  content: "";
+  display: table;;
+  clear: both;
+}
+.container #logo #red1 {
+  color: red;
+}
+.container #logo #yellow1 {
+  color: yellow;
+}
+.container #logo #green1 {
+  color: green;
+}
