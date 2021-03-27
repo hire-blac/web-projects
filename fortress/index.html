@@ -6,13 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Property Managers</title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-
   
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
@@ -25,7 +24,7 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg font-weight-bold navbar-light bg-transparent p-4">
+  <nav id="mynav" class="navbar navbar-expand-lg fw-bold navbar-light bg-transparent p-4">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="images/logo-color.png" alt="">
@@ -37,7 +36,7 @@
       </button>
 
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav mx-5 mb-2 mb-lg-0 fs-5">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Features</a>
           </li>
@@ -49,21 +48,25 @@
           </li>
         </ul>
       </div>
-      <div class="btn btn-primary fw-bold">Start Free Trial</div>
+      <div style="width: 220px; height: 40px; text-align: center; padding: 7px; color: white; background: cornflowerblue;" class="button">Start Free Trial</div>
     </div>
   </nav>
 
   <div class="container">
 
     <div class="row my-5">
-      <div class="col-lg-6 text-sm-center text-lg-start my-auto">
-        <h1>Manage your estates on the go.</h1>
-        <p>From visitor access control to residents' complaints and raising 
+      <div class="col-lg-6 text-center text-lg-start my-auto">
+        <h1 class="fw-lighter lh-sm" style="font-size: 4em;">Manage your estates on the go.</h1>
+        <p class="fs-5">From visitor access control to residents' complaints and raising 
           emergencies, Fortress is redefining estate management in Nigeria.
         </p>
-        <div class="mx-sm-auto">
-          <div class="btn bg-light border">App Store</div>
-          <div class="btn bg-light mx-2 border">Play Store</div>
+        <div class="mx-sm-auto mt-5">
+          <div class="button">
+            <img class="logo" src="images/apple-black.svg" alt="">
+            App Store</div>
+          <div class="button">
+            <img class="logo" src="images/android-logo-2.svg" alt="">
+            Play Store</div>
         </div>
 
       </div>
@@ -78,21 +81,21 @@
       <div class="col-md-4 text-center">
         <img src="images/visitor.png" alt="">
         <h3 class="mt-4">Visitor Management</h3>
-        <p>Residents can easily invite guests with uniquely generated access codes right 
+        <p class="text-muted smaller-font">Residents can easily invite guests with uniquely generated access codes right 
           from their phone
         </p>
       </div>
       <div class="col-md-4 text-center">
         <img src="images/alarm.png" alt="">
         <h3 class="mt-4">Emergency Alarms</h3>
-        <p>Fortress has you covered if the unexpected happens. Residents can easily 
+        <p class="text-muted smaller-font">Fortress has you covered if the unexpected happens. Residents can easily 
           alert estate security in the event of unforseen danger.
         </p>
       </div>
       <div class="col-md-4 text-center">
         <img src="images/seminar.png" alt="">
         <h3 class="mt-4">Assign Tasks</h3>
-        <p>Streamline how you attend to resident complaints. Delegate tasks to the 
+        <p class="text-muted smaller-font">Streamline how you attend to resident complaints. Delegate tasks to the 
           appropriate personnel to follow up on.
         </p>
       </div>
@@ -104,22 +107,26 @@
         <img src="images/property-management-software-nigeria.png" alt="">
       </div>
 
-      <div class="col-lg-6 px-5 text-lg-start text-sm-center my-auto">
-        <h2>Manage your time, make things more organised.</h2>
-        <p>We have made it easier for you to manage your properties by providing functions 
+      <div class="col-lg-6 text-center text-lg-start my-auto">
+        <h2 style="font-size: 3em;">Manage your time, make things more organised.</h2>
+        <p class="text-muted smaller-font">We have made it easier for you to manage your properties by providing functions 
           where you can assign tasks to different people working in the estate.
         </p>
-        <div class="mx-sm-auto">
-          <div class="btn bg-light border">App Store</div>
-          <div class="btn bg-light mx-2 border">Play Store</div>
+        <div class="mx-sm-auto mt-5">
+          <div class="button">
+            <img class="logo" src="images/apple-black.svg" alt="">
+            App Store</div>
+          <div class="button">
+            <img class="logo" src="images/android-logo-2.svg" alt="">
+            Play Store</div>
         </div>
       </div>
 
     </div><!-- row -->
 
     <div class="col-md-8 mx-auto mt-5 text-center">
-      <h2>How Fortress Works?</h2>
-      <p>We have streamlined how your residents receive guests, relay complaints to 
+      <h2 style="font-size: 3em;">How Fortress Works?</h2>
+      <p class="text-muted smaller-font">We have streamlined how your residents receive guests, relay complaints to 
         you and raise alarms all from their mobile device.
       </p>
     </div>
@@ -127,31 +134,49 @@
     <div class="row m-5 pb-5">
 
       <div class="col-12 col-md-4 text-center">
-        <h3>Install the app</h3>
-        <p>Downlaod the app now from the Google Play and App store.</p>
+        <div class="download">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
+            <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/>
+          </svg>
+        </div>
+        <h4>Install the app</h4>
+        <p class="text-muted smaller-font">Downlaod the app now from the Google Play and App store.</p>
       </div>
       <div class="col-12 col-md-4 text-center">
-        <h3>Setup your profile</h3>
-        <p>Let's get to know you. Tell us about you and your property.</p>
+        <div class="download">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
+          <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/>
+        </svg>
+      </div>
+        <h4>Setup your profile</h4>
+        <p class="text-muted smaller-font">Let's get to know you. Tell us about you and your property.</p>
       </div>
       <div class="col-12 col-md-4 text-center">
-        <h3>Enjoy the features</h3>
-        <p>Start managing your estate right from your mobile phone.</p>
+        <div class="download">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
+            <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/>
+          </svg>
+        </div>
+        <h4>Enjoy the features</h4>
+        <p class="text-muted smaller-font">Start managing your estate right from your mobile phone.</p>
       </div>
 
     </div><!--row -->
 
     <div class="row m-5 pt-5 border-bottom">
-      <div class="col-12 col-lg-6  text-sm-center text-lg-start my-auto">
-        <h1>Try Fortress for free!</h1>
-        <p>We are a mobile based property management application that helps estate 
+      <div class="col-lg-6 text-center text-lg-start my-auto">
+        <h2 style="font-size: 3em;">Try Fortress for free!</h2>
+        <p class="text-muted smaller-font">We are a mobile based property management application that helps estate 
           owners monitor and control every aspect of their properties; from visitor
            access control to managing residents' complaints and emergecies.
         </p>
-        <div class="mx-sm-auto">
-          <div class="btn bg-light border">App Store</div>
-          <div class="btn bg-light mx-2 border">Play Store</div>
-          
+        <div class="mx-sm-auto mt-5">
+          <div class="button">
+            <img class="logo" src="images/apple-black.svg" alt="">
+            App Store</div>
+          <div class="button">
+            <img class="logo" src="images/android-logo-2.svg" alt="">
+            Play Store</div>
         </div>
 
       </div>
@@ -169,14 +194,14 @@
     <img src="images/logo-color.png" alt="">
     
     <ul class="nav justify-content-sm-center mt-3">
-      <li class="nav-item">
-        <a class="nav-link" href="">How It Works</a></li>
-      <li class="nav-item">
-        <a class="nav-link" href="">Features</a></li>
-      <li class="nav-item">
-        <a class="nav-link" href="">Download</a></li>
-      <li class="nav-item">
-        <a class="nav-link" href="">Terms and Conditions</a></li>
+      <li class="nav-item smaller-font">
+        <a class="nav-link px-2" href="">How It Works</a></li>
+      <li class="nav-item smaller-font">
+        <a class="nav-link px-2" href="">Features</a></li>
+      <li class="nav-item smaller-font">
+        <a class="nav-link px-2" href="">Download</a></li>
+      <li class="nav-item smaller-font">
+        <a class="nav-link px-2" href="">Terms and Conditions</a></li>
     </ul>
     
     &copy;2021 Fortress, Designed By <a href="">danihire</a>  
