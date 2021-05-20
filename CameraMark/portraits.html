@@ -1,120 +1,243 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portrates</title>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" 
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
   
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <title>The CameraMark</title>
 
-  <link rel="stylesheet" href="style.css">
-
-  <style>
-    header {
-        background: url("imgs/portrate/prt\ \(10\).jpg") fixed;
-        background-repeat: no-repeat;
+    <style>
+      
+      header {
+        background: url("imgs/portrate/prt\ \(10\).jpg") no-repeat;
         background-size: cover;
       }
-  </style>
+      @media screen and (max-width: 640px) {
+        header {
+          background-position-x: -100px;
+        }
+      }
 
-</head>
-<body>
+    </style>
 
-  <header>
-    <div class="transparent-box">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent m-5">
-        <div class="container-fluid">
-          <a class="navbar-brand mr-5" href="#">The CameraMark</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Services
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item active" href="">Portraits</a></li>
-                  <li><a class="dropdown-item" href="weddings.html">Weddings</a></li>
-                  <li><a class="dropdown-item" href="events.html">Events</a></li>
-                  <li><a class="dropdown-item" href="#">Fashion</a></li>
-                  <li><a class="dropdown-item" href="#">Lifestyle</a></li>
-                  <li><a class="dropdown-item" href="#">Product</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Documentries</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about-us.html">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact us</a>
-              </li>
-            </ul>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent mb-3 px-lg-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="default.html">The CameraMark</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav small">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="default.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Gallery
+              </a>
+              <ul class="dropdown-menu small" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item active" href="#">Portraits</a></li>
+                <li><a class="dropdown-item" href="weddings.html">Weddings</a></li>
+                <li><a class="dropdown-item" href="fashion.html">Fashion</a></li>
+                <li><a class="dropdown-item" href="product.html">Product</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu small" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="documentary.html">Documentary</a>
+            </li>
+          </ul>
+
+          <div style="text-align: center;">
+            <a class="mybutton nav-button" href="">Contact us</a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="transparent-box">
+      
+        <div class="intro">
+          <h1>Portraits</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, optio, 
+            eius rerum eos dignissimos assumenda ducimus dolorum cupiditate animi.
+          </p>
+          <div style="text-align: center;">
+            <a class="mybutton" href="">Book a Shoot</a>
           </div>
         </div>
-      </nav>
+        
+      </div><!-- transparent-box -->
 
-      <div class="jumbotron bg-transparent">
-        <h1>PORTRATES</h1>
-      </div>
+    </header>
+    
+    <nav class="mid-nav">
+      <ul>
+        <li>
+          <a href="portraits.html" class="active">Portraits</a>
+        </li>
+        <li>
+          <a href="weddings.html">Weddings</a>
+        </li>
+        <li>
+          <a href="fashion.html">Fashion</a>
+        </li>
+        <li>
+          <a href="documentary.html">Documentary</a>
+        </li>
+        <li>
+          <a href="product.html">Product</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-6 col-lg-3 px-4">
+
+          <img src="imgs/portrate/pt (89).JPG" loading="lazy" alt="">  
+          <img src="imgs/portrate/pt (7).JPG" loading="lazy" alt="">  
+          <img src="imgs/portrate/pt (18).JPG" loading="lazy" alt="">
+
+        </div>
+
+        <div class="col-md-6 col-lg-3 px-4">
+          
+          <img src="imgs/portrate/prt (13).JPG" loading="lazy" alt="">  
+          <img src="imgs/portrate/pt (23).JPG" loading="lazy" alt="">  
+          <img src="imgs/portrate/pt (56).JPG" loading="lazy" alt="">
+
+        </div>
+
+        <div class="col-md-6 col-lg-3 px-4">
+            
+          <img src="imgs/portrate/pt (55).JPG" loading="lazy" alt="">
+          <img src="imgs/portrate/pt (2).JPG" loading="lazy" alt="">  
+          <img src="imgs/portrate/pt (74).JPG" loading="lazy" alt="">
+
+        </div>
+
+        <div class="col-md-6 col-lg-3 px-4">
+            
+          
+          <img src="imgs/portrate/pt (73).JPG" loading="lazy" alt="">
+          <img src="imgs/portrate/pt (57).JPG" loading="lazy" alt="">
+          <img src="imgs/portrate/pt (92).JPG" loading="lazy" alt="">
+
+        </div>
+
+      </div><!-- row -->
       
-      <a class="nav-link btn btn-primary" style="color: gold; width: 200px; margin: 0 auto;" href="#">Book a session</a>
+      <div style="text-align: center;">
+        <a class="mybutton" href="">View more</a>
+      </div>
+
+    </div><!--container-->
+
+    <div class="footer container-fluid border-top">
+
+      <div class="row">
+        
+        <div class="col-md-4">
+          <h3 class="mb-3"><a href="">The CameraMark</a></h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate 
+            repellat asperiores odit, quis ea porro minima velit incidunt fugiat.
+          </p>
+          <div class="social-media">
+            <a href="">
+              <img src="imgs/icons/facebook.svg" alt="">
+            </a>
+            <a href="">
+              <img src="imgs/icons/instagram.svg" alt="">
+            </a>
+            <a href="">
+              <img src="imgs/icons/twitter.svg" alt="">
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <h3 class="mb-3">Quick Links</h3>
+          <ul>
+            <li>
+              <a href="">Portraits</a>
+            </li>
+            <li>
+              <a href="">Weddings</a>
+            </li>
+            <li>
+              <a href="">Fashion</a>
+            </li>
+            <li>
+              <a href="#">Documentary</a>
+            </li>
+            <li>
+              <a href="">Product</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="col-md-4">
+          <h3 class="mb-3">Contact us</h3>
+          <ul>
+            <li class="mb-2">
+              <img src="imgs/icons/geo-alt.svg" alt="">&nbsp;
+              No. 11 Kontagora close Wuse 2, Abuja.
+            </li>
+            <li class="mb-2">
+              <img src="imgs/icons/envelope.svg" alt="">&nbsp;
+              <a href="mailto:">faerenmark@gmail.com</a>.
+            </li>
+            <li class="mb-2">
+              <img src="imgs/icons/telephone.svg" alt="">&nbsp;
+              +234-701-234-5678.
+            </li>
+          </ul>
+        </div>
+        
+      </div><!-- row -->
 
     </div>
+    
 
-  </header><!--page-header-->
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Local Javascript-->
+    <script src="bootstrap/js/jquery-3.5.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
-  <div class="container-fluid">
-    <div class="flex-container">
-
-      <div class="flex-box">
-        <a href="imgs/portrate/prt (16).jpg">
-          <img src="imgs/portrate/prt (16).jpg" loading="lazy" alt="">
-        </a> 
-        <img src="imgs/portrate/prt (21).jpg" loading="lazy" alt="">
-        <img src="imgs/portrate/prt (18).jpg" loading="lazy" alt="">
-        <img src="imgs/portrate/prt (3).jpg" loading="lazy" alt="">
-        <img src="imgs/portrate/prt (1).jpg" loading="lazy" alt="">
-        <img src="imgs/portrate/prt (5).jpg" loading="lazy" alt="">
-        <img src="imgs/portrate/prt (2).jpg" loading="lazy" alt="">
-      </div>
-
-      <div class="flex-box">
-        <img src="imgs/portrate/prt (24).jpg" loading="lazy" alt="">
-        <img src="imgs/portrate/prt (17).jpg" loading="lazy" alt="">
-        <img src="imgs/portrate/prt (4).jpg" loading="lazy" alt="">
-        <img src="imgs/portrate/prt (8).jpg" loading="lazy" alt="">
-        <img src="imgs/portrate/prt (14).jpg" loading="lazy" alt="">
-        <img src="imgs/portrate/prt (20).jpg" loading="lazy" alt="">
-        <img src="imgs/portrate/prt (19).jpg" loading="lazy" alt="">
-      </div>
-
-      <div class="flex-box">
-        <img src="imgs/portrate/prt (11).jpg" loading="lazy" alt="">
-        <img src="imgs/portrate/prt (6).jpg" loading="lazy" alt="">
-        <img src="imgs/portrate/prt (7).jpg" loading="lazy" alt="">
-        <img src="imgs/portrate/prt (12).jpg" loading="lazy" alt="">
-        <img src="imgs/portrate/prt (15).jpg" loading="lazy" alt="">
-        <img src="imgs/portrate/prt (22).jpg" loading="lazy" alt="">
-      </div>
-
-    </div><!-- flex-container -->
-
-  </div><!-- container-fluid -->
-
-  <div class="jumbotron text-center" style="margin: 50px 0 0;background: #080329;padding: 10px 0;">
-    <p>&copy; The CameraMark. Powered by <a href="">danihire</a></p>
-  </div>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   
-</body>
+    </body>
 </html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Navbar</title>
+
+  <style>
+    body {
+      background: #888;
+    }
+    nav {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      text-align: center;
+      padding: 10px 20px;
+      overflow: visible;
+    }
+    .logo {
+      float: left;
+      border: solid 1px white;
+    }
+    .menu-list {
+      display: none;
+      position: relative;
+      top: 50px;
+      border: solid 1px white;
+    }
+    ul {
+      margin: 0 auto;
+    }
+    .menu-list li {
+      display: block;
+      margin: 10px 20px;
+    }
+    .menu-collapse {
+      float: right;
+    }
+    @media screen and (min-width: 800px) {
+      .menu-list {
+        display: inline-block;
+        top: 0;
+        border: solid 1px white;
+      }
+      .menu-collapse {
+        display: none;
+      }
+      .menu-list li {
+        display: inline-block;
+      }
+    }
+
+
+  </style>
+
+</head>
+<body>
+  
+    <nav>
+      <div class="logo">
+        <h1>Logo</h1>
+      </div>
+      <div class="menu-list">
+        <ul>
+          <li>
+            <a href="">Link</a>
+          </li>
+          <li>
+            <a href="">Link</a>
+          </li>
+          <li>
+            <a href="">Link</a>
+          </li>
+          <li>
+            <a href="">Link</a>
+          </li>
+        </ul>
+     </div>
+
+      <div class="menu-collapse">
+        <a href="">
+          []
+        </a>
+      </div>
+      
+    </nav>
+
+</body>
+</html>
