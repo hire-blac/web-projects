@@ -128,9 +128,6 @@ img:hover {
 }
 
 @media screen and (min-width: 1001px){
-  header {
-    background-position-y: -100px;
-  }
   h1 {font-size: 4em;}
   .mid-nav {
     margin: 50px 100px;
